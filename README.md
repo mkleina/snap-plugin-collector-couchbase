@@ -44,11 +44,11 @@ Make sure your set up a snap config file and a readonly user for your couchbase 
 }
 ```
 
-Run snapd with the config file. Then use snapctl to list discovered metrics.
+Run snapteld with the config file. Then use snaptel to list discovered metrics.
 ```
-$ ./snapd --plugin-trust 0 --log-level 1 --config /path/to/config/config.json
-$ ./snapctl plugin load $GOPATH/bin/snap-plugin-collector-couchbase
-$ ./snapctl metric list
+$ ./snapteld --plugin-trust 0 --log-level 1 --config /path/to/config/config.json
+$ ./snaptel plugin load $GOPATH/bin/snap-plugin-collector-couchbase
+$ ./snaptel metric list
 ```
 
 You can then write your task file. We have an example here below that also uses the passthru and mock-file plugin.

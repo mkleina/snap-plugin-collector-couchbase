@@ -1,5 +1,5 @@
 .DS_Store
-snapctl
+snaptel
 vendor
 glide.lock
 examples/configs/config.json
